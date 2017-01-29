@@ -1,0 +1,17 @@
+- database:
+    name: "my_database"
+    server: "database_server.local"
+    environment: "development"
+    user: "username"
+    password: "password"
+    metrics:
+        - "metric.users.created.count"
+        - "metric.my_app.something.gauge"
+- database:
+    name: "my_prod_database"
+    server: "prod_database_server.local"
+    environment: "production"
+    user: "username"
+    password: "password"
+    metrics:
+        - "metric.my_app.something.gauge"

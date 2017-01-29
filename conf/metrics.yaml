@@ -1,0 +1,9 @@
+- metric:
+    type: count
+    name: "metric.users.created.count"
+    query: "SELECT COUNT(*) FROM dbo.Users WHERE Created > DateADD(SECOND, -15, CURRENT_TIMESTAMP);"
+
+- metric:
+    type: gauge
+    name: "metric.my_app.something.gauge"
+    query: "SELECT TOP 1 Duration FROM dbo.Widgets WHERE Created > DateADD(SECOND, -15, CURRENT_TIMESTAMP);"
